@@ -39,10 +39,14 @@ A single denormalized table of 20,594 track records, each combining Spotify stre
 | Flags | `licensed`, `official_video` | Boolean |
 
 **Scale:** 20,592 tracks after cleaning · 2,074 artists · 11,854 albums · 6,673 channels
+### 📐 Table Schema
 
-**Note on structure:** this is a flat single-table dataset rather than a relational schema, so there is no ER diagram. The analytical weight sits in aggregation, window functions and query planning rather than joins.
+![Table schema](assets/schema_diagram.png)
 
----
+**Note on structure:** this is a flat single-table dataset, not a relational
+schema, so there are no foreign keys or joins to diagram. The analytical
+weight sits in aggregation, window functions and query planning instead.
+
 
 ## ✅ Data Quality Notes
 
